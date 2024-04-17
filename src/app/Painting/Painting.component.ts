@@ -9,14 +9,14 @@ import { DataService } from '../data.service';
 })
 export class PaintingComponent implements OnInit {
   painting: any;
-  imageUrl: string;
+  imageUrl: string = 'mona_lisa.png';
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.dataService.getPaintingData().subscribe(data => {
       this.painting = data;
-      this.imageUrl = 'assets/images/mona_lisa.png' + this.painting.picture;
+      this.imageUrl = 'assets/images/mona_lisa.png' ;
     });
   }
 }

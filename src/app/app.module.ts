@@ -1,18 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
 
-// Import each component
+import { HttpClientModule } from '@angular/common/http';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { PaintingComponent } from './painting/painting.component';
+import { PaintingComponent } from './Painting/Painting.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-@NgModule({
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
-})
 
 @NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -21,8 +19,10 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    MatToolbarModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

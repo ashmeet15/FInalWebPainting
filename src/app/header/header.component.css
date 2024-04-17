@@ -1,0 +1,19 @@
+
+.mat-toolbar {
+  background-color: #1976D2;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.mat-toolbar-title {
+  font-family: Arial, sans-serif;
+}
+
+
+.mat-toolbar:hover {
+  background-color: #1565C0;
+}
