@@ -15,10 +15,15 @@ export class DataService {
     },
     "medium": "oil on poplar panel",
     "picture": "mona_liza.jpg",
-    "famous": true
+    "isFamous": true,
+    "isNotFamous": false
   };
 
   getPaintingData(): Observable<any> {
     return of(this.data);
+  }
+
+  setFamous(value: boolean) {
+    this.data.isFamous = value;
   }
 }

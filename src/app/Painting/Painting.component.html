@@ -3,7 +3,11 @@
   <img [src]="imageUrl" alt="Mona Lisa">
   <p><strong>Artist:</strong> {{ painting.artist }}</p>
   <p><strong>Medium:</strong> {{ painting.medium }}</p>
-  <p><strong>Year:</strong> {{ painting.year }}</p>
-  <p><strong>Dimensions:</strong> {{ painting.dimensions.width }} in × {{ painting.dimensions.height }} in</p>
-  <p><strong>Famous:</strong> {{ painting.famous ? 'Yes' : 'No' }}</p>
+  <p><strong>Dimensions:</strong> {{ painting.dimensions.width }} in × {{ painting.dimensions.height }} in</p><p><strong>Famous:</strong><p><strong>Famous:</strong></p>
+  <div class="checkbox-container">
+    <input type="checkbox" [(ngModel)]="isFamous" class="checkbox-input" (change)="toggleFamous(isFamous)">
+    <label class="checkbox-label">Yes</label>
+    <input type="checkbox" [checked]="!isFamous" class="checkbox-input" (change)="toggleFamous(!isFamous)">
+    <label class="checkbox-label">No</label>
+  </div>
 </div>

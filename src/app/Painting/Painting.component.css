@@ -1,0 +1,38 @@
+
+.painting-details {
+  margin-bottom: 20px;
+  background-color: cadetblue;
+  padding: 20px;;
+  border-radius: 5px;
+
+}
+
+.painting-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.painting-details img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.painting-details p {
+  margin-bottom: 5px;
+}
+
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.checkbox-input {
+  margin-right: 5px;
+}

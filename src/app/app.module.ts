@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { PaintingComponent } from './Painting/Painting.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -20,7 +20,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   imports: [
     BrowserModule,
     HttpClientModule,
-    MatToolbarModule
+    MatToolbarModule,
+    FormsModule
   ],
 
   providers: [],
