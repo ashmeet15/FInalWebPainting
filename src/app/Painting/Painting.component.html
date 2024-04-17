@@ -1,0 +1,9 @@
+<div *ngIf="painting">
+  <h2>{{ painting.name }}</h2>
+  <img [src]="imageUrl" alt="{{ painting.name }}">
+  <p><strong>Artist:</strong> {{ painting.artist }}</p>
+  <p><strong>Medium:</strong> {{ painting.medium }}</p>
+  <p><strong>Year:</strong> {{ painting.year }}</p>
+  <p><strong>Dimensions:</strong> {{ painting.dimensions.width }} in × {{ painting.dimensions.height }} in</p>
+  <p><strong>Famous:</strong> {{ painting.famous ? 'Yes' : 'No' }}</p>
+</div>
